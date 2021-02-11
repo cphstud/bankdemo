@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Transaction {
+public class Transaction extends Account {
 
     private int amount;
     private Date date;
