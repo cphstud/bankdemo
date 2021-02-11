@@ -1,3 +1,5 @@
+package domain;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -6,11 +8,14 @@ public class Account {
 
     private List<Transaction> transactions;
     private Customer customer;
+    private int id;
 
-    public Account(Customer customer) {
+    public Account(Customer customer, int id) {
         this.transactions = new ArrayList<>();
         this.customer = customer;
+        this.id=id;
     }
+
 
     public Customer getCustomer() {
         return customer;
